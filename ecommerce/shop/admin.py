@@ -20,7 +20,6 @@ class AdminCommande(admin.ModelAdmin):
     list_display=('items', 'nom', 'email', 'address', 'pays', 'total','date_commande')
     search_fields=('nom','date_commande', )
     
-    
 admin.site.register(Product, AdminProduct)
 admin.site.register(Category , AdminCategorie)
 admin.site.register(Commande, AdminCommande)

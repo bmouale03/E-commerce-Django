@@ -51,12 +51,170 @@
         </ul>
       </div>
 </div>
-<div class="row">
-  <div class="d-flex flex-column ms-3"> Bonjour! 
-    <span>Call to Our Experts</span>
-      <a href="tel:+ 0123 456 7890"><span class="text-dark">Free: + 0123 456 7890</span></a>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  header {
+    background: #ff6600;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+h1 {
+  color: #ff6600;
+}
+p {
+  color: #555;
+  font-size: 16px;
+  margin: 10px 0;
+}
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  background: #ff6600;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.cta-button:hover {
+  background: #cc5500;
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  padding: 30px 10%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+.footer-section h3 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ff9800;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-section ul li {
+  margin: 8px 0;
+}
+.footer-section ul li a {
+  color: #ddd;
+  text-decoration: none;
+}
+.footer-section ul li a:hover {
+  color: #ff9800;
+}
+.social-icons a {
+  color: #fff;
+  margin: 5px;
+  font-size: 24px;
+  text-decoration: none;
+}
+.social-icons a:hover {
+  color: #ff9800;
+}
+.payment-icons img {
+  width: 50px;
+  margin: 5px;
+}
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+}
+
+</style>
+<!--page A propos Start-->
+<body>
+  <header>À Propos de Notre Boutique</header>
+  <div class="container">
+      <h1>Qui sommes-nous ?</h1>
+      <p>Bienvenue sur notre boutique en ligne ! Nous offrons une large gamme de produits de qualité à des prix compétitifs.</p>
+      <p>Notre mission est de vous fournir une expérience d'achat exceptionnelle avec un service client réactif et efficace.</p>
+      <p>Nous sélectionnons soigneusement nos produits pour garantir votre satisfaction.</p>
+      <a href="contact.html" class="cta-button">Contactez-nous</a>
   </div>
+  </body>
+<!---Page A propos end-->
+
+<!--Footer start-->
+
+<footer>
+  <div class="footer-section">
+      <h3>À Propos</h3>
+      <p>Nous facilitons le commerce entre l'Afrique et la Chine en proposant des produits de qualité au meilleur prix.</p>
+  </div>
+  <div class="footer-section">
+      <h3>Liens Utiles</h3>
+      <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Produits</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+      </ul>
+  </div>
+  <div class="footer-section">
+      <h3>Suivez-nous</h3>
+      <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="#"><i class="fab fa-telegram"></i></a>
+      </div>
+  </div>
+  <div class="footer-section">
+      <h3>Paiements Sécurisés</h3>
+      <div class="payment-icons">
+          <!-- Icône MTN Mobile Money -->
+          <a href="https://www.mtn.com" target="_blank">
+            <img src="mtn-money-icon.svg" alt="MTN Mobile Money" width="40" height="40">
+          </a>
+          <!-- Icône Moov Money -->
+          <a href="https://www.moov-africa.com" target="_blank">
+            <img src="static/img/Moov_Africa_logo.png" alt="Moov Money" width="40" height="40">
+          </a>
+      </div>
+  </div>
+</footer>
+<div class="copyright" style="color: #ff9800;">
+  &copy; 2024 Ecommerce Afrique - Chine | Tous droits réservés
 </div>
+<!--Footer end-->
+
 {% endblock content %}
 {% block js %}
 <script type="text/javascript">

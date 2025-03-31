@@ -35,5 +35,11 @@ class Commande(models.Model):
         ordering = ['-date_commande']
     def __str__(self):
         return self.nom
+class Subscriber(models.Model):
+    email = models.EmailField(unique=True)
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.email
 
     
