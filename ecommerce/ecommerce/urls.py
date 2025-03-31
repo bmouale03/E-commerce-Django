@@ -16,8 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path , include
+from shop.views import contact_view 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('' , include('shop.urls'))
+    path('' , include('shop.urls')),
+    path('__debug__/', include('debug_toolbar.urls')),  # Debug Toolbar
+
 ]

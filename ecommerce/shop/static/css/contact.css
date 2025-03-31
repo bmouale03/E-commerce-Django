@@ -1,0 +1,71 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b6acac6f;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Conteneur du formulaire */
+.contact-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titre */
+.contact-container h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Champs du formulaire */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Focus sur les champs */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Bouton d'envoi */
+.contact-form button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* Effet au survol du bouton */
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Message de succès */
+.success-message {
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}

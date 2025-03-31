@@ -158,6 +158,19 @@ footer {
   }
 }
 
+
+h1 {
+    color: #ff9800;
+    font-size: 2.5em;
+}
+.section {
+    background: white;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 </style>
 <!--page A propos Start-->
 <body>
@@ -167,51 +180,63 @@ footer {
       <p>Bienvenue sur notre boutique en ligne ! Nous offrons une large gamme de produits de qualité à des prix compétitifs.</p>
       <p>Notre mission est de vous fournir une expérience d'achat exceptionnelle avec un service client réactif et efficace.</p>
       <p>Nous sélectionnons soigneusement nos produits pour garantir votre satisfaction.</p>
-      <a href="contact.html" class="cta-button">Contactez-nous</a>
+      <a href="{% url 'contact' %}"" class="cta-button">Contactez-nous</a>
+</div>
   </div>
   </body>
-<!---Page A propos end-->
+  
+<!--Page A propos end-->
 
 <!--Footer start-->
 
 <footer>
   <div class="footer-section">
       <h3>À Propos</h3>
-      <p>Nous facilitons le commerce entre l'Afrique et la Chine en proposant des produits de qualité au meilleur prix.</p>
+      <p>Nous facilitons le commerce entre l'Afrique et la Chine en proposant des produits de qualité au meilleur prix.
+      </p>
   </div>
   <div class="footer-section">
       <h3>Liens Utiles</h3>
       <ul>
           <li><a href="#">Accueil</a></li>
           <li><a href="#">Produits</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
           <li><a href="#">FAQ</a></li>
       </ul>
   </div>
   <div class="footer-section">
       <h3>Suivez-nous</h3>
       <div class="social-icons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/share/15vfgKbSKD/"><i class="fab fa-facebook"></i></a>
+          <a href="https://chat.whatsapp.com/I7no5reLKts6fslUualUbA"><i class="fab fa-whatsapp"></i></a>
           <a href="#"><i class="fab fa-telegram"></i></a>
+          <a href="https://www.instagram.com/noelman59?igsh=MXZuc3l3eHczNWdvdg=="><i class="fab fa-instagram"></i></a>
       </div>
   </div>
   <div class="footer-section">
       <h3>Paiements Sécurisés</h3>
       <div class="payment-icons">
-          <!-- Icône MTN Mobile Money -->
-          <a href="https://www.mtn.com" target="_blank">
-            <img src="mtn-money-icon.svg" alt="MTN Mobile Money" width="40" height="40">
+          <!--Icône Orange Mobile Money -->
+          <a href="https://www.orange.com" target="_blank">
+            <img src="static\img\orange-money-logo.png" alt="Orange Mobile Money" width="45" height="45">
           </a>
           <!-- Icône Moov Money -->
           <a href="https://www.moov-africa.com" target="_blank">
             <img src="static/img/Moov_Africa_logo.png" alt="Moov Money" width="40" height="40">
           </a>
+           <!Icône MTN Money -->
+           <a href="https://www.mtn.com" target="_blank">
+            <img src="static/img/Mtn-money-logo.png" alt="MTN Money" width="40" height="40">
+          </a>
+          <!-- Icône Wave Money -->
+          <a href="https://www.wave.com" target="_blank">
+            <img src="static/img/Wave-money-logo.png" alt="Wave Money" width="40" height="40">
+          </a>
       </div>
   </div>
 </footer>
 <div class="copyright" style="color: #ff9800;">
-  &copy; 2024 Ecommerce Afrique - Chine | Tous droits réservés
+  <h5>&copy; 2024 Ecommerce Afrique - Chine | Tous droits réservés</h5>
 </div>
 <!--Footer end-->
 

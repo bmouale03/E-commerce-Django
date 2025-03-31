@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect
-from .models import Product, Category, Commande
+from .models import Product, Category, Commande,Contact
 from django.core.paginator import Paginator
-
-
+from django.core.mail import send_mail
+from .forms import ContactForm
+from django.conf import settings
+from django.contrib import messages
 
 # Create your views here.
 def index(request):
@@ -40,4 +42,17 @@ def confirmation(request):
     for item in info:
         nom = item.nom
     return render(request, 'shop/confirmation.html', {'name':nom})
+
+def contact_view(request):
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, "Votre message a été envoyé avec succès !")
+            return redirect('base')  # Redirection après soumission
+    else:
+        form = ContactForm()
+    return render(request, 'shop/contact_form.html', {'form': form})
     
+def success_view(request):
+    return render(request, 'shop/contact_success.html') 
