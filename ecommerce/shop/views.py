@@ -54,7 +54,7 @@ def contact_view(request):
         if form.is_valid():
             form.save()
             messages.success(request, "Votre message a été envoyé avec succès !")
-            return redirect('base')  # Redirection après soumission
+            return redirect('contact')  # Redirection après soumission
     else:
         form = ContactForm()
     return render(request, 'shop/contact_form.html', {'form': form})

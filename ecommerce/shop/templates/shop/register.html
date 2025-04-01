@@ -10,13 +10,13 @@
 </head>
 <body>
     <div class="form-container">
-        <h2>Inscription</h2>
+        <h2 style="color: brown;">Inscription</h2>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">S'inscrire</button>
         </form>
-        <p>Déjà inscrit ? <a href="{% url 'login' %}">Connexion</a></p>
+        <p>Déjà inscrit ? <a href="{% url 'login' %}" style="color: green;">Connexion</a></p>
     </div>
 </body>
 </html>

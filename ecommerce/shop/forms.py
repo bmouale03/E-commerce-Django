@@ -9,11 +9,11 @@ class ContactForm(forms.ModelForm):
         model = Contact
         fields = ['name', 'email', 'subject', 'message']
 class SignUpForm(forms.ModelForm):
-    first_name = forms.CharField(max_length=30, required=True)
-    last_name = forms.CharField(max_length=30, required=True)
-    username = forms.CharField(max_length=30, required=True)
+    first_name = forms.CharField(max_length=100, required=True)
+    last_name = forms.CharField(max_length=100, required=True)
+    username = forms.CharField(max_length=100, required=True)
     email = forms.EmailField(required=True)
-    phone_number = forms.CharField(max_length=15, required=True)
+    phone_number = forms.CharField(max_length=30, required=True)
     password = forms.CharField(widget=forms.PasswordInput)
     confirm_password = forms.CharField(widget=forms.PasswordInput)
     class Meta:
