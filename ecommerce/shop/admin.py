@@ -1,5 +1,6 @@
 from django.contrib import admin
-from .models import Category , Product, Commande,Contact
+from .models import Category , Product, Commande,Contact,UserProfile
+
 # Register your models here.
 admin.site.site_header = "E-commerce ChineAfrica"
 admin.site.site_title ="ChineAfrica"
@@ -22,9 +23,17 @@ class AdminCommande(admin.ModelAdmin):
 class AdminContact(admin.ModelAdmin):
    list_display=('name', 'email', 'subject', 'message', 'created_at')
    search_fields=('email', )
+
+class AdminUserProfile(admin.ModelAdmin):
+    list_display=('user', 'phone_number')
+    search_fields=('email', )
     
 admin.site.register(Product, AdminProduct)
 admin.site.register(Category , AdminCategorie)
 admin.site.register(Commande, AdminCommande)
 admin.site.register(Contact, AdminContact)
+admin.site.register(UserProfile, AdminUserProfile)
+
+
+
 
