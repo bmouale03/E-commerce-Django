@@ -9,14 +9,18 @@
         </div>
         <div class="col-md-6">
             <div class="text-warning display-3">
-                Titre : {{ product.title }}
+                <a style="color: green;">Titre : </a>{{ product.title }}
             </div>
             <div class="text-danger ">
-                Prix : ${{ product.price }}
+                <a style="color: green;">Prix :</a> ${{ product.price }}
             </div>
-            <div>
-                Description : {{ product.description }}
+            <div class="text">
+                <a style="color: green;">Description :</a> ${{ product.description }}
             </div>
+            <div class="text-danger">
+                <a style="color: green;">Date_d'ajout:</a>  ${{ product.date_added }}
+            </div>
+          
 
             <a href="{% url 'base' %} " ><button class="btn btn-success">Acheter</button></a>
 

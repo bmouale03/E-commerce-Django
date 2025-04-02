@@ -46,3 +46,12 @@ button {
 button:hover {
     background-color: #218838;
 }
+.logo_section {
+    width: 33.33%;
+}
+
+.top-header .navbar {
+    padding: 0;
+    min-height: 60px;
+    float: left;
+}
